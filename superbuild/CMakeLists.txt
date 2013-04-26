@@ -61,5 +61,6 @@ ExternalProject_Add( MySuperProject
 	CMAKE_GENERATOR ${gen}
 	CMAKE_ARGS
 	  ${ep_common_args}
+    -DBUILD_DEPENDENCIES:BOOL=OFF
     -DCeres_DIR:PATH=${INSTALL_DIR}/lib/cmake/Ceres
 )
